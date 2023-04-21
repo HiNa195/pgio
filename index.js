@@ -10,12 +10,6 @@ app.listen(process.env.PORT || 3000, () => {
     console.log("Server started (http://localhost:3000/) !");
 });
 
-// Setup routes
-app.get("/", (req, res) => {
-  //res.send ("Hello world...");
-  res.render("index");
-});
-
 // Add database package and connection string (can remove ssl)
 const { Pool } = require('pg');
 const pool = new Pool({
