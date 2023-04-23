@@ -6,8 +6,6 @@ require('dotenv').config();
 // Set up EJS
 app.set("view engine", "ejs");
 
-
-
 // Add database package and connection string (can remove ssl)
 const { Pool } = require('pg');
 const pool = new Pool({
